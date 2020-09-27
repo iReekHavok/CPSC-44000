@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Author: Brendan Cagampang
+-->
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="dice.css">
+    <script src="dice.js"></script>
+    <title>Dice Game</title>
+</head>
+<body onload="RollTwentySidedDice1(), RollTwentySidedDice2()">
+    <h1>This is a fight to the death! The player that rolls the higher number wins! Press the Fight button to put your life at risk!</h1>
+    <div class="fight">
+        <input type="image" src="fightButton.png" alt="fight" onclick="RollTwentySidedDice1(), RollTwentySidedDice2()" autofocus></input>
+    </div>
+    <div class="stats">
+        <h3>Player 1 vs Player 2</h3>
+        
+        <input id="dice1" type="text" value="" size="4" disabled>
+        vs
+        <input id="dice2" type="text" value="" size="4" disabled>
+    </div>
+    <div class="sf">
+        <img src="https://media.giphy.com/media/u4th4weIsJfuE/giphy.gif">
+    </div>
+</body>
+
+</html>

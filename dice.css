@@ -1,0 +1,21 @@
+body {
+    background-color: lightgrey;
+}
+
+h1 {
+    text-align: center
+}
+
+.fight {
+    text-align: center;
+    
+}
+
+.stats {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sf {
+    text-align: center;
+}
