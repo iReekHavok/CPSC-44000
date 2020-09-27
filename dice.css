@@ -6,6 +6,11 @@ h1 {
     text-align: center
 }
 
+.home {
+    text-align: center;
+    padding-top: 10px;
+}
+
 .fight {
     text-align: center;
     
