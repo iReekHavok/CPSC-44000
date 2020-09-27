@@ -2,6 +2,10 @@ body {
     background-color: lightgrey;
 }
 
+input {
+    text-align:right;
+}
+
 h1 {
     text-align: center
 }
