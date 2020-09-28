@@ -9,9 +9,36 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="regexp.css">
-    <script src="regexp.js"></script>
     <title>RegExp</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .home {
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+    </style>
+    <script>
+        function RegExp() {
+            ui = document.getElementById("UserInput").value;
+            re = document.getElementById("RegExp").value;
+
+            //exp = RegExp(re);
+            //result = exp.test(ui);
+
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
 </head>
+<body>
+    <div class="home"><a target="_blank" href="https://cpsc-44000-bc.azurewebsites.net">Home</a></div>
+
+    Input: <input id="UserInput" type="text" value=""><br>
+    RegExp: <input id="RegExp" type="text" value=""><br>
+    <button type="button" onclick="RegExp()">Test</button>
+    <br><br>
+    Result: <p id="result"></p>
+</body>
 
 </html>
