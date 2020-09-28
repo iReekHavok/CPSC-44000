@@ -13,6 +13,7 @@
     <style>
         body {
             text-align: center;
+            background-color: lightgrey;
         }
         .home {
             padding-top: 5px;
@@ -20,25 +21,25 @@
         }
     </style>
     <script>
-        function RegExp() {
-            ui = document.getElementById("UserInput").value;
-            re = document.getElementById("RegExp").value;
+        function testRE() {
+            var ui = document.getElementById("ui").value;
+            var re = document.getElementById("re").value;
 
-            //exp = RegExp(re);
-            //result = exp.test(ui);
+            var exp = RegExp(re);
+            var res = exp.test(ui);
 
-            document.getElementById("result").innerHTML = result;
+            document.getElementById("result").innerHTML = res;
         }
     </script>
 </head>
 <body>
     <div class="home"><a target="_blank" href="https://cpsc-44000-bc.azurewebsites.net">Home</a></div>
 
-    Input: <input id="UserInput" type="text" value=""><br>
-    RegExp: <input id="RegExp" type="text" value=""><br>
-    <button type="button" onclick="RegExp()">Test</button>
+    Input: <input id="ui" type="text" value=""><br>
+    RegExp: <input id="re" type="text" value=""><br>
+    <button type="button" onclick="testRE()">Test</button>
     <br><br>
-    Result: <p id="result"></p>
+    Result: <input id="result" type="text" value="" disabled>
 </body>
 
 </html>
